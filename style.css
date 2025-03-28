@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rowdies", sans-serif;
+}
+body {
+    background-image: linear-gradient(rgba(0, 2, 1, 0.10), rgba(0, 0, 0, 0.10)), url(https://news.dupontregistry.com/wp-content/uploads/2023/01/05-BUGATTI_Jean_LaVoitureNoire.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+header {
+    height: auto;
+    background-color: #000000;
+    border-bottom: 3px solid rgb(255, 0, 0);
+    box-shadow: 1px 10px 40px rgb(180, 6, 6);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 2px 10px;
+}
+header nav{
+    margin-left: 580px;
+}
+nav li   {
+    list-style: none;
+    display: inline-block;
+    padding: 2px 30px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(180, 6, 6);
+}
+.btn {
+    width: 130px;
+    height: 40px;
+    border: 3px solid rgb(180, 6, 6);
+    border-radius: 15px;
+    box-shadow: 1px 10px 40px rgb(180, 6, 6);
+    background-color: black;
+    color: rgb(180, 6, 6);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.btn:hover {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(180, 6, 6);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.btn:active {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    scale: 0.84;
+}
+.logo a {
+    margin-left: 70px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 4px 5px rgb(255, 255, 255), -2px -4px 5px rgb(255, 255, 255);
+}
+header drop {
+    display: none ;
+}
+.logo::first-letter {
+    font-size: 40px;
+    color: red;
+}
+.drop li{
+    display: block;
+    
+    background-color: red;
+    box-shadow: 1px 10px 40px rgb(180, 6, 6);
+}
+.drop {
+    position: absolute;
+    display: none;
+}
+._drop:hover .drop {
+    display: block;
+}
+.drop_menu:hover {
+    background-color: rgb(120, 14, 14);
+}
+.drop_menu:active {
+    background-color: rgb(0, 0, 0);
+    color: red;
+}
+ li a::after {
+    content: "";
+    width: 0;
+    margin: auto;
+    height: 3px;
+    display: block;
+    background-color: red;
+}
+ li a:hover::after {
+    width: 100%;
+    transition: width 0.3s line;
+}
+
+
+
